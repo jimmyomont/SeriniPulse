@@ -27,9 +27,9 @@ if (compteur === 1){
 })
 
 
-
+//---------------------------------------------------------------------------------------
 // timer
-const but = document.querySelector('button');
+const but = document.getElementById('start');
 
 let cps = 1;
 
@@ -64,3 +64,21 @@ const timing = () => {
         timerTitle.textContent = 'END'
     }
 }
+
+//---------------------------------------------------------------------------------------------
+
+// basculement bouton audio on - opff 
+
+const audioOn = document.getElementById('iconOn'); 
+console.log(audioOn);
+const audioOff = document.getElementById('iconOff'); 
+console.log(audioOff);
+
+audioOn.addEventListener('click', ()=>{
+    audioOn.classList.add('hidden'); 
+    audioOff.classList.remove('hidden'); 
+})
+audioOff.addEventListener('click', ()=>{
+    audioOff.classList.add('hidden'); 
+    audioOn.classList.remove('hidden'); 
+})

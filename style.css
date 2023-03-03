@@ -193,6 +193,15 @@ button {
   margin: auto;
 }
 
+.btnAudio {
+  display: flex;
+  width: 20%;
+  height: 30%;
+}
+
+.hidden {
+  display: none;
+}
 
 
 
