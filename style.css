@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'kirby';
+	src: url('/kirby-classic.ttf') format('truetype')
+}
+
 
 .box {
   position: relative; 
@@ -18,7 +23,6 @@
   border-radius: 50%;
   z-index: 1;  
 }  */
-
 
 .left-cheek {
   position: absolute;
@@ -123,12 +127,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: "Jost", sans-serif;
+  /* font-family: "Jost", sans-serif; */
   background: #E693A1;
 }
 
 label , h1{
-  color: #fff;
+  font-family: "kirby", sans-serif;
+  text-shadow: 1px 5px 5px  #e45f80;
+  color: #e4bd12;
   font-size: 3em;
   justify-content: center;
   display: flex;
@@ -140,12 +146,15 @@ label , h1{
 }
 /* Stylisation du bouton */
 button {
+  font-family: "kirby", sans-serif;
+  text-shadow: 1px 5px 5px  #e45f80;
+  color: #e4bd12;
   width: 250px;
 height: 50px; /* Définition de la hauteur du bouton */
 margin: 10px auto; 
 justify-content: center; 
 display: block;
-color: #fff; /* Couleur du texte */
+/* color: #fff; Couleur du texte */
 background: #db6e89; /* Couleur de fond */
 font-size: 1.5em; /* Taille de la police */
 font-weight: bold; /* Épaisseur de la police */
@@ -187,12 +196,16 @@ select {
   width: 250px;
   height: 200px;
   background: #db6e89;
-  color: #fff;
+  /* color: #fff; */
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+  font-family: "kirby", sans-serif;
+  text-shadow: 1px 5px 5px  #e45f80;
+  color: #e4bd12;
+  font-size: 2rem;
 }
 
 .btnAudio {
