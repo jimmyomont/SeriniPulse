@@ -49,7 +49,7 @@ but.addEventListener('click', () => {
 // Boîte du timer
 const timerCadre = document.querySelector('.timer');
 // Titre qui affiche le nombre de secondes qu'il reste
-let timerTitle = document.createElement('h1');
+let timerTitle = document.createElement('h2');
 // Minuteur de 10 secondes
 let i = 50;
 timerTitle.textContent = i-- + ' sec';
@@ -61,7 +61,7 @@ const timing = () => {
     if (i > 0) {
         timerTitle.textContent = i-- + ' sec';
     } else {
-        timerTitle.textContent = 'END'
+        timerTitle.textContent= 'End';
     }
 }
 
