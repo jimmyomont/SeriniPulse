@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/script.js"></script>
+    <title>test</title>
+</head>
+<body>
+  <header>
+    <section>
+      <article>
+          <label for="compteur">Temps:</label>
+              <select name="minuteur" id="compteur">
+                  <option value="0">--choisir la durée--</option>
+                  <option value="1">1 minute</option>
+                  <option value="2">2 minutes</option>
+                  <option value="3">3 minutes</option>
+                  <option value="4">4 minutes</option>
+                  <option value="5">5 minutes</option>
+              </select>
+      </article>
+      <article>
+
+          <button id="start" >commencer</button>
+          <div class="timer"></div>
+
+      </article>
+  </section>
+</header>
+<main>
+<!-- Making Kirby --> 
+  <!-- Invisible Box --> 
+  <div class="box">
+
+    <!-- Head ~ pink --> 
+    <div class="head">
+  
+      <!-- Left cheek ~ coral -->
+      <div class="left-cheek"></div>
+
+      <!-- Right cheek ~ coral --> 
+      <div class="right-cheek"></div> 
+      
+      <!-- Left eye ~ black --> 
+      <div class="left-eye">
+          <!-- Left pupil ~ white -->
+          <div class="pupil"></div>
+          <!-- Left shade ~ blue --> 
+          <div class="shade"></div>
+          <!-- Shaping the shade ~ black --> 
+          <div class="shaper"></div> 
+      </div>
+      
+      <!-- Right eye ~ black --> 
+      <div class="right-eye">
+          <!-- Right pupil ~ white --> 
+          <div class="pupil"></div>
+          <!-- Right shade ~ blue --> 
+          <div class="shade"></div>
+          <!-- Shaping the shade ~ black --> 
+          <div class="shaper"></div> 
+      </div> 
+      <!-- Left eye is parent div to its pupil, shade, and shaper; while right eye is parent div to its pupil, shade, and shaper; writing it in the order of left eye, right eye, pupil, shade, and shaper in css causes right eye to be child div to left eye 
+SOLNS: 
+-rewrite each div under left and right eyes with different class names
+-put right eye div underneath left eye div?
+- ?--> 
+      
+      <!-- Mouth ~ red --> 
+      <div class="mouth">
+        <!-- Tongue ~ dark pink --> 
+        <div class="tongue"></div> 
+      </div> 
+    <!--End Head --> 
+    </div>     
+  <!-- End Invisible Box --> 
+  </div>
+</main>
+   <footer>
+
+
+    </footer>
+</body>
+</html>
