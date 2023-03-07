@@ -31,7 +31,22 @@ audioOff.addEventListener('click', () => {
     //remise à zero de l audio 
     // audio.currentTime = 0;
 })
+//--------------------bouton play/pause-------------------------------------
 //creer une fonction qui play une music 
+const play = document.getElementById('play');
+const pause = document.getElementById('pause');
+
+pause.addEventListener('click', ()=>{
+    play.classList.remove('hidden');
+    pause.classList.add('hidden');
+    audio.pause();
+})
+play.addEventListener('click', ()=>{
+    play.classList.add('hidden');
+    pause.classList.remove('hidden');
+    audio.play()
+    audio.currentTime = 0 ; 
+})
 
 //--------------------hidden au clic commencer --------------------------
 // variable du main et header 
@@ -80,15 +95,14 @@ let id = null;
         case "1":
             //action faite 
             //message 'appuyez sur une touche' pour démmarer 
-            timerElement.textContent = "appuyez sur une touche";
+            // timerElement.textContent = "appuyez sur une touche";
             //demarre si appuye sur une touche 
-            window.addEventListener('keydown', () => {
+            // window.addEventListener('keydown', () => {})
             //j'envois la valeur du 'temp' si case 1 séléctionné 
             temps = 60;
             // renvoi les valeur a la fontcion miminuerTimer
-            diminuerTimer(selecTime )})
+            diminuerTimer(selecTime );
             // if (play musique si btn son active)
-
             break;
         case "2":
             temps = 120;

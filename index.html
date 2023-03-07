@@ -14,11 +14,10 @@
 
   <audio class="hidden"  controls="controls" id="audioPlayer">
     <source src = "/Abundance.mp3" />
-    <p> Your browser doesn't support the audio tag </p> 
   </audio>
-
-<button class="btnAudio  btn" id="iconOn"><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-sound-mobile-app-development-flaticons-lineal-color-flat-icons-3.png"/></button>
-<button class="btnAudio hidden btn" id="iconOff"><img src="https://img.icons8.com/arcade/64/null/no-audio.png"/></button>
+  <h2>Musique :</h2>
+  <button class="btnAudio  btn" id="play"><img src="https://img.icons8.com/dusk/64/null/play-button-circled--v1.png"/></button>
+  <button class="btnAudio hidden btn" id="pause"><img src="https://img.icons8.com/external-kmg-design-outline-color-kmg-design/64/null/external-pause-cinema-kmg-design-outline-color-kmg-design.png"/></button>
     <section>
       <article>    
           <h2 for="compteur">Temps :</h2>
@@ -38,11 +37,19 @@
   </section>
 </header>
 <main class="hidden" id="main">
-  <div class="close">
-        <button class="btnClose">
-          <img class="btnSize" src="https://img.icons8.com/dusk/64/null/cancel--v1.png"/>
-        </button>
-      </div>
+  <article class="btnHidden">
+
+          <div class="close">
+            <button class="btnClose">
+              <img class="btnSize" src="https://img.icons8.com/dusk/64/null/cancel--v1.png"/>
+            </button>
+          </div>
+        <div>
+        <button class="btnMute hidden btn" id="iconOn"><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-sound-mobile-app-development-flaticons-lineal-color-flat-icons-3.png"/></button>
+        <button class="btnMute  btn" id="iconOff"><img src="https://img.icons8.com/arcade/64/null/no-audio.png"/></button>
+        </div>
+
+  </article>
   <div class="box">
     <div class="head">
       <div class="left-cheek"></div>

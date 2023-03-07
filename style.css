@@ -148,6 +148,9 @@ h2 , h1, select{
   font-weight: bold;
   text-align: center;
 }
+h2 {
+  font-size: 2em;
+}
 /* Stylisation du bouton */
 .btn {
   font-family: "kirby", sans-serif;
@@ -246,5 +249,16 @@ select {
 select:hover {
     border: solid 3px #e45f80; 
     background: #dd8198;
+}
+
+.btnMute {
+  padding: 0;
+  width: 5rem;
+  height: 4rem;
+}
+.btnHidden {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row-reverse;
 }
 
