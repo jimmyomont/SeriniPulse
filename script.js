@@ -122,9 +122,45 @@ let id = null;
             break;
         default:
             window.alert('veuillez choisir une durée'); 
+            location.reload(); 
             break;
     }}
 })
+
+//--------------------------------rythme de réspiration-------------------------
+const respiration = document.getElementById ('respiration'); 
+const bouche = document.querySelector('.mouth')
+start.addEventListener ('click', ()=>{ 
+        let respirationValue = respiration.value; 
+    if ( main.classList.remove('hidden') === main.classList.remove('hidden') ){
+
+const rythme = document.getElementById('rythme')
+    switch (respirationValue){
+        case "1": 
+        rythme.classList.add('rythme64');
+        break;
+
+        case "2": 
+        rythme.classList.add('rythme55');
+        break;
+
+        case "3": 
+        rythme.classList.add('rythme46');
+        break;
+
+        case "4": 
+        rythme.classList.add('rythme37');
+        break;
+
+    default:
+        window.alert('veuillez choisir un rythme'); 
+        location.reload(); 
+        break;
+    }}
+});
+
+
+
 //--------------------------------Timer--------------------------------
 
 //https://www.commentcoder.com/timer-javascript/
