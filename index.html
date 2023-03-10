@@ -12,17 +12,24 @@
   <header id="header">
 <h1>Ma coherence cardiaque</h1>
 
-  <audio class="hidden"  controls="controls" id="audioPlayer">
+  <!-- <audio class="hidden"  controls="controls" id="audioPlayer">
     <source src = "/Abundance.mp3" />
+  </audio> -->
+  <!-- <audio class="hidden"  controls="controls" id="audioPlayer">
+    <source src = "/birds.mp3" />
+  </audio> -->
+  <audio class="hidden"  controls="controls" id="audioPlayer">
+    <source src = "/pluie.mp3" />
   </audio>
   <h2>Musique :</h2>
   <button class="btnAudio  btn" id="play"><img src="https://img.icons8.com/dusk/64/null/play-button-circled--v1.png"/></button>
   <button class="btnAudio hidden btn" id="pause"><img src="https://img.icons8.com/external-kmg-design-outline-color-kmg-design/64/null/external-pause-cinema-kmg-design-outline-color-kmg-design.png"/></button>
     <section>
+      <div class="selectFlex">
       <article>    
           <h2 for="compteur">respiration :</h2>
               <select name="minuteur" id="respiration">
-                  <option value="0">choisir la repisration</option>
+                  <option value="0">choisir le rythme</option>
                   <option value="1">6/4</option>
                   <option value="2">5/5</option>
                   <option value="3">4/6</option>
@@ -40,7 +47,7 @@
                   <option value="5">5 minutes</option>
               </select>
       </article>
-
+</div>
       <article>
           <button id="start" class="btn" >commencer</button>
           <div class="timer hidden"></div>
