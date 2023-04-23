@@ -195,7 +195,3 @@ const timerElement = document.getElementById('timer');
 
     },1000 ); }
 
-    //---------------------------temps d animation ------------------------------------
-
-// selection de la div .style.animation = 10s linear  infinite  alternate  bouche
-// localStorage.reload
