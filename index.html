@@ -7,30 +7,10 @@
     <link rel="stylesheet" href="/style.css">
     <script defer src="/script.js" type="text/javascript"></script>
     <title>cohérence Cardiaque </title>
-    <script >
-      // JavaScript pour le compteur de visite
-      function getNumVisits() {
-        // Vérifie si un cookie de compteur de visite existe
-        if (document.cookie.indexOf("visits=") == -1) {
-          // Si le cookie n'existe pas, initialise le compteur à 1
-          document.cookie = "visits=1";
-          var numVisits = 1;
-        } else {
-          // Si le cookie existe, récupère le nombre de visites
-          var numVisits = parseInt(document.cookie.split("visits=")[1]);
-          // Incrémente le nombre de visites
-          numVisits++;
-          // Met à jour le cookie avec le nouveau nombre de visites
-          document.cookie = "visits=" + numVisits;
-        }
-        // Retourne le nombre de visites
-        return numVisits;
-      }
-    </script>
 </head>
 <body>
   <header id="header"> 
-     <p class="hidden">Nombre de visites: <script type="text/javascript">document.write(getNumVisits());</script></p>
+     <p class="hidden" id="counter">Nombre de visites: <script type="text/javascript">document.write(getNumVisits());</script></p>
 <h1>Ma coherence cardiaque</h1>
 
   <!-- <audio class="hidden"  controls="controls" id="audioPlayer">
