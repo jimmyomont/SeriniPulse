@@ -5,10 +5,10 @@ const start = document.getElementById('start');
 // basculement bouton audio on - off 
 //variable du btn on 
 const audioOn = document.getElementById('iconOn');
-console.log(audioOn);
+
 //variable du btn off
 const audioOff = document.getElementById('iconOff');
-console.log(audioOff);
+
 // variable audio 
 const audio = document.getElementById('audioPlayer');
 //ecoute le btn on 
@@ -93,11 +93,6 @@ let id = null;
     switch (selecTime) {
         //dans le cas ou la valeur 1 (1 min) est selectionnée
         case "1":
-            //action faite 
-            //message 'appuyez sur une touche' pour démmarer 
-            // timerElement.textContent = "appuyez sur une touche";
-            //demarre si appuye sur une touche 
-            // window.addEventListener('keydown', () => {})
             //j'envois la valeur du 'temp' si case 1 séléctionné 
             temps = 60;
             // renvoi les valeur a la fontcion miminuerTimer
@@ -195,7 +190,7 @@ const timerElement = document.getElementById('timer');
 
     },1000 ); }
 
-//------------------------------------------------------
+//------------------------compteur de visite------------------------------
 const counter = document.getElementById('counter')
 const updateCounter = async () =>{
     const data = await fetch( "https://api.countapi.xyz/hit/counter_Coeherence_Cardiaque/visits");
@@ -204,3 +199,4 @@ const updateCounter = async () =>{
 
 }
 updateCounter()
+console.log(counter);
