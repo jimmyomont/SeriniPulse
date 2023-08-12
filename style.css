@@ -1,7 +1,8 @@
 @font-face {
-	font-family: 'kirby';
-	src: url('/kirby-classic.ttf') format('truetype')
+	font-family: 'Amazing';
+	src: url('./sons&images&font/Amazing-classic.ttf') format('truetype')
 }
+
 
 
 .box {
@@ -14,16 +15,6 @@
   background: #E693A1; 
   border: none; 
 }
-
-
-
-/* .head {
-  background: #E693A1;
-  width: 100%; 
-  height: 100%; 
-  border-radius: 50%;
-  z-index: 1;  
-}  */
 
 .left-cheek {
   position: absolute;
@@ -66,7 +57,6 @@
   background: #5D2926;  
 }
 
-
 .pupil { 
   position: absolute; 
   border-radius: 50%; 
@@ -76,7 +66,7 @@
   left: 20%; 
   background: white; 
   z-index: 3;
-}/*All shapes are on top of the invisible box. So cheeks and eyes are on z-index: 1; pupil will be on z-index: 2, 'higher layer' */  
+}
 
 .shade {
   position: absolute; 
@@ -108,12 +98,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* font-family: "Jost", sans-serif; */
   background: #E693A1;
 }
 
 h2 , h1, select{
-  font-family: "kirby", sans-serif;
+  font-family: "Amazing", sans-serif;
   text-shadow: 1px 5px 5px  #e45f80;
   color: #e4bd12;
   font-size: 3em;
@@ -126,43 +115,28 @@ h2 , h1, select{
 h2 {
   font-size: 2em;
 }
-/* Stylisation du bouton */
 .btn {
-  font-family: "kirby", sans-serif;
+  font-family: "Amazing", sans-serif;
   text-shadow: 1px 5px 5px  #e45f80;
   color: #e4bd12;
   width: 250px;
-height: 50px; /* Définition de la hauteur du bouton */
+height: 50px;
 margin: 10px auto; 
 justify-content: center; 
 display: block;
-/* color: #fff; Couleur du texte */
-background: #db6e89; /* Couleur de fond */
-font-size: 1.5em; /* Taille de la police */
-font-weight: bold; /* Épaisseur de la police */
-margin-top: 20px; /* Définition de la marge en haut du bouton */
-outline: none;
-border: none; /* Suppression de la bordure */
-border-radius: 5px; /* Arrondissement des coins */
+
+background: #db6e89;
+font-size: 1.5em; 
+font-weight: bold;
+margin-top: 20px; 
+border: none;
+border-radius: 5px; 
 cursor: pointer;
 }
 
-/* Effet de survol pour le bouton */
 .btn:hover {
-  background: #dd8198; /* Changement de couleur de fond lors du survol  avec une couleur plus clair*/
+  background: #dd8198; 
 }
-
-
-
-/* timer */
-/* button {
-  color: #333;
-  width: 500px;
-  height: 200px;
-  font-size: 4rem;
-  border-radius: 10px;
-  outline: none;
-} */
 
 .timer {
   width: 250px;
@@ -174,7 +148,7 @@ cursor: pointer;
   justify-content: center;
   align-items: center;
   margin: auto;
-  font-family: "kirby", sans-serif;
+  font-family: "Amazing", sans-serif;
   text-shadow: 1px 5px 5px  #e45f80;
   color: #e4bd12;
   font-size: 2rem;
@@ -199,10 +173,9 @@ cursor: pointer;
   cursor: pointer;
   justify-content: center; 
   display: block;
-  background: #db6e8900; /* Couleur de fond */
+  background: #db6e8900; 
   border: none;
 }
-
 
 .bouche {
   display: flex;
@@ -238,7 +211,7 @@ select:hover {
 }
 
 .mouth {
-  font-family: "kirby", sans-serif;
+  font-family: "Amazing", sans-serif;
   text-shadow: 1px 5px 5px  #e45f80;
   color: #e4bd12;
   font-size: 2em;
