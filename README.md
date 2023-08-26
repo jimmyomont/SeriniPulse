@@ -62,10 +62,10 @@ Les différentes technologies HTML, CSS, JavaScript sont utilisées pour créer 
     - Écoute de l'événement click sur le bouton de fermeture.
     - Rechargement de la page pour réinitialiser l'interface.
 
-### Gestion des Éléments Visuels de la Mascotte :
+### Gestion des Éléments Visuels du personnage :
 
-- Éléments associés : Différentes parties de la mascotte (left-cheek, right-cheek, left-eye, etc.)
-- Fonctionnalité : Anime visuellement la mascotte pour refléter la respiration et le rythme choisis.
+- Éléments associés : Différentes parties du personnage (left-cheek, right-cheek, left-eye, etc.)
+- Fonctionnalité : Anime visuellement le personnage pour refléter la respiration et le rythme choisis.
 - Détails techniques :
     - Ajout et suppression de classes CSS pour appliquer les animations et les transformations.
     - Utilisation de classes spécifiques pour représenter les différents rythmes de respiration.
@@ -112,17 +112,17 @@ Les différentes technologies HTML, CSS, JavaScript sont utilisées pour créer 
 ### Démarrage de la Session :
 
 En cliquant sur le bouton "commencer", l'utilisateur lance la session de cohérence cardiaque.
-L'animation visuelle se dévoile, avec une mascotte qui suit le rythme respiratoire et le timer.
+L'animation visuelle se dévoile, avec un personnage qui suit le rythme respiratoire et le timer.
 
 ### Bouton de Fermeture :
 
 Un bouton de fermeture permet à l'utilisateur de revenir au menu principal à tout moment.
 
-### Interaction et Jeu :
+### Interaction :
 
-L'application propose une expérience interactive et engageante, incitant l'utilisateur à suivre le rythme de respiration de la mascotte.
+L'application propose une expérience interactive et engageante, incitant l'utilisateur à suivre le rythme de respiration du personnage.
 Les éléments visuels réagissent au rythme respiratoire, créant une atmosphère de jeu amusante et relaxante.
 
 ### Intégration Audio :
 
-L'application intègre des éléments audio pour la musique d'ambiance et les sons d'interaction.
+L'application intègre des éléments audio pour la musique d'ambiance.
